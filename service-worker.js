@@ -84,7 +84,7 @@ async function addItemToWishList(url, wishList, apiKey, hostAddress) {
 }
 
 // register a listener for when the extension is installed
-chrome.runtime.onInstalled.addListener(() => {
+browser.runtime.onInstalled.addListener(() => {
     console.log("Installed the Universal Wish List extension.");
 });
 

@@ -2,13 +2,21 @@
     "name": "Universal Wish List",
     "version": "1.0",
     "description": "An extension for adding items to lists in Universal Wish List",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "firefox-extension@universalwishlist.org",
+            "data_collection_permissions": {
+                "required": ["authenticationInfo", "browsingActivity"]
+            }
+        }
+    },
     "permissions": ["tabs", "storage"],
     "host_permissions": [
         "http://*/*",
         "https://*/*"
     ],
     "background": {
-        "service_worker": "service-worker.js",
+        "scripts": ["service-worker.js"],
         "type": "module"
     },
     "action": {
