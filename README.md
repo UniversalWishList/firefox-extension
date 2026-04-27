@@ -6,28 +6,28 @@ This is the Firefox extension for Universal Wish List, which allows you to add i
 
 *Instructions taken from the [Firefox first extension tutorial](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#trying_it_out).*
 
-1. Clone the repository with `git clone https://github.com/UniversalWishList/chrome-extension.git`.
-2. Open Google Chrome and go to `chrome://extensions`.
-3. Enable Developer Mode by toggling the switch next to **Developer mode**.
-4. Click the **Load unpacked** button and select the directory where you cloned the repository.
+1. Clone the repository with `git clone https://github.com/UniversalWishList/firefox-extension.git`.
+2. Open Firefox and go to `about:debugging`.
+3. Click **This Firefox** from the left sidebar.
+4. Click **Load Temporary Add-on** and navigate to the directory where you cloned the repository.
+5. Select the `manifest.json` file, although any file should work.
 
 The extension is now cloned, you can access it from the puzzle icon in the top right and, optionally, can pin it for easy access.
 
+*Note that the extension will be removed once Firefox restarts, so you'll have to reinstall it. A persistent version of the extension is coming soon.*
+
 ## Loading Changes
 
-In `chrome://extensions` there is a reload button on the panel for this extension. Click it to reload the extension to match any changes made in this directory.
+On the same page where you installed the extension there is a **Reload** button at the bottom of the extension's info section. Click it to reload the extension to match any changes made in this directory.
 
 ## Dev Notes
 
 - View the console log by opening the popup window, right clicking it and selecting **Inspect**. Then select the **Console** panel from the top.
-- If there's an error, an **Error** button will show up in `chrome://extensions`. If you click it you can see details about the errors.
 
 ## Sources
 
-- [Hello World extension | Get started | Chrome for Developers](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world)
+- [Your first extension - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
+- [Your second extension - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_second_WebExtension)
 - [Permissions | Chrome for Developers](https://developer.chrome.com/docs/extensions/reference/permissions-list)
 - [Message passing | Chrome for Developers](https://developer.chrome.com/docs/extensions/develop/concepts/messaging)
 - [Handle events with service workers | Get started | Chrome for Developers](https://developer.chrome.com/docs/extensions/get-started/tutorial/service-worker-events)
-- [Your first extension - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
-- [Your second extension - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_second_WebExtension)
-
