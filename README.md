@@ -1,12 +1,12 @@
-# Universal Wish List Chrome Extension
+# Universal Wish List Firefox Extension
 
-This is the Google Chrome extension for Universal Wish List, which allows you to add items to your wish lists without leaving the shopping website.
+This is the Firefox extension for Universal Wish List, which allows you to add items to your wish lists without leaving the shopping website.
 
 *Note: This extension is in development and currently stubs out any API access. Stubs output can be found in the console, accessible through the Inspect window for the extension.*
 
 ## Installation
 
-*Instructions taken from the [Chrome Hello World tutorial](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked).*
+*Instructions taken from the [Firefox first extension tutorial](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#trying_it_out).*
 
 1. Clone the repository (instructions to come).
 2. Open Google Chrome and go to `chrome://extensions`.
@@ -30,3 +30,6 @@ In `chrome://extensions` there is a reload button on the panel for this extensio
 - [Permissions | Chrome for Developers](https://developer.chrome.com/docs/extensions/reference/permissions-list)
 - [Message passing | Chrome for Developers](https://developer.chrome.com/docs/extensions/develop/concepts/messaging)
 - [Handle events with service workers | Get started | Chrome for Developers](https://developer.chrome.com/docs/extensions/get-started/tutorial/service-worker-events)
+- [Your first extension - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
+- [Your second extension - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_second_WebExtension)
+
