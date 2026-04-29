@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     btn.addEventListener('click', async function () {
         // get the current url and selected list
-        const [tab] = await chrome.tabs.query({active: true, currentWindow: true});  // fails tests for some reason with 'browser.tabs.query...'
+        const [tab] = await browser.tabs.query({active: true, currentWindow: true});
         const dropdown = document.getElementById('list-select');
         console.log("Adding item to list from URL:", tab.url, "and wish list ID:", dropdown.value);
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 throw new Error(`Got response '${response.status}'.`);
         } catch (error) {
             console.error('Got an error when sending message to service worker:', error);
-            return;
+            // return;  // message sends properly, but always errors in firefox. comment out return statement so button can be disabled like normal
         }
 
         // after the script runs, disable the button and change its text
